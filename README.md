@@ -1,4 +1,4 @@
-<p align="center"><img src="https://res.cloudinary.com/drmyhljip/image/upload/v1577280944/title_img_xcupaz.svg" width="768"></p>
+<p align="center"><img src="https://res.cloudinary.com/drmyhljip/image/upload/v1577281554/title_img_bhz07s.svg" width="768"></p>
 
 #
 #### About
