@@ -1,6 +1,7 @@
-## About Communication System
+<p align="center"><img src="https://res.cloudinary.com/drmyhljip/image/upload/v1577280944/title_img_xcupaz.svg" width="768"></p>
 
-It is demo project.
+#
+#### About
 
 Communication Droid is capable to communicate with completely different Solar Systems with its own specifics. 
 Its main goal is to message distant galaxies and purchase plasma guns. It expects clear response if facilities would be delivered. 
@@ -12,5 +13,5 @@ To keep system maintainable and stable it is made highly SOLID, classes are loos
 
 As a result Driod will convert all response messages into unified structure no matter how response was received. All request are logged as well. 
 
-Being a demo project, some functionality has been simplified, excluding architecture, it is made to perform.  
+It is a demo project, some functionality has been simplified, excluding architecture, it is made to perform.  
    
