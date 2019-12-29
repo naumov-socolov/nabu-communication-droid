@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-body" v-for="solarSystem in this.solarSystems">
+                    <div class="solar-system-container" v-for="solarSystem in this.solarSystems">
                         <SolarSystem
                             :techDetails="solarSystem"
                         >
@@ -42,3 +42,12 @@
         },
     };
 </script>
+
+<style>
+    .container {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

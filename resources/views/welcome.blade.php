@@ -7,78 +7,30 @@
         <title>Nabu Communication Droid</title>
 
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <script src="{{ mix('js/manifest.js') }}"></script>
+        <script src="{{ mix('js/vendor.js') }}"></script>
         <script src="{{ mix('js/app.js') }}"></script>
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-
-            .logs {
-                margin-top: 50px;
-
-            }
-        </style>
+        <link rel="stylesheet" href="{{ mix('css/solar_system.css') }}">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
                     Nabu Communication Droid
+                    <img src="https://res.cloudinary.com/drmyhljip/image/upload/v1577633403/nabu_communication_droid/droid_povait.svg" width="62px">
                 </div>
 
-                <div class="links">
+                <div>
                     Send message to distant Solar System:
-                    <a href="/api/inner/user/solar-system/1/send-message?amount=50">Eriadu</a>
-                    <a href="/api/inner/user/solar-system/2/send-message?amount=50">Corellia</a>
+                    <div id="app">
+                        <solar-systems></solar-systems>
+                    </div>
                 </div>
                 <div class="logs links">
                     See detailed: <a href="/logs">Message Logs</a>
                 </div>
             </div>
-        </div>
-        <div id="app">
-            <solar-systems></solar-systems>
         </div>
     </body>
 </html>

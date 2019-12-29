@@ -12,6 +12,9 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .extract(['vue'])
     .sass('resources/sass/app.scss', 'public/css');
+
+mix.styles(['resources/css/solar_system.css'], 'public/css/solar_system.css');
 
 mix.copyDirectory('resources/img', 'public/img');
