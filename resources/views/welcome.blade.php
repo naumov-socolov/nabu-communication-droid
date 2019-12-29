@@ -6,10 +6,8 @@
 
         <title>Nabu Communication Droid</title>
 
-        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
+        <script src="{{ mix('js/app.js') }}"></script>
         <style>
             html, body {
                 background-color: #fff;
@@ -78,6 +76,9 @@
                     See detailed: <a href="/logs">Message Logs</a>
                 </div>
             </div>
+        </div>
+        <div id="app">
+            <solar-systems></solar-systems>
         </div>
     </body>
 </html>
