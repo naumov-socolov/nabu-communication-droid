@@ -3,8 +3,6 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\Domain\SolarSystem\Models\Message;
-use App\Domain\SolarSystem\Models\SolarSystem;
-use App\Domain\Users\Models\User;
 use Faker\Generator as Faker;
 
 $factory->define(
@@ -20,8 +18,8 @@ $factory->define(
         ];
 
         return [
-            'user_id' => factory(User::class)->create(),
-            'solar_system_id' => factory(SolarSystem::class)->create(),
+            'user_id' => 1,
+            'solar_system_id' => 1,
             'status' => $statuses[array_rand($statuses)],
             'amount' => rand(100, 500),
             'proceed_link' => $faker->domainName,
