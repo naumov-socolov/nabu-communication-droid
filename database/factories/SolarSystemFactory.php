@@ -6,12 +6,15 @@ use App\Domain\SolarSystem\Models\SolarSystem;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
-//const EXISTING_DRIVERS = ['eriadu', 'corellia'];
-$existingDrivers = ['eriadu', 'corellia'];
+$connectedDrivers = ['eriadu', 'corellia'];
+$connectedImages = [
+    'https://res.cloudinary.com/drmyhljip/image/upload/v1577627240/nabu_communication_droid/solar_systems/eriadu_hbmovh.svg',
+    'https://res.cloudinary.com/drmyhljip/image/upload/v1577627240/nabu_communication_droid/solar_systems/corellia_maviol.svg',
+];
 
 $factory->define(
     SolarSystem::class,
-    function (Faker $faker) use ($existingDrivers) {
+    function(Faker $faker) use ($connectedDrivers, $connectedImages) {
         return [
             'title' => $faker->userName,
             'slug' => $faker->slug,
@@ -24,8 +27,8 @@ $factory->define(
                                   . '/:/'
                                   . $faker->latitude,
             'trade_routes' => [$faker->company],
-            'driver_name' => $existingDrivers[rand(0, count($existingDrivers) - 1)],
-            'img' => Str::random(25),
+            'driver_name' => $connectedDrivers[rand(0, count($connectedDrivers) - 1)],
+            'img' => $connectedImages[rand(0, count($connectedImages) - 1)],
         ];
     }
 );

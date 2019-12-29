@@ -7,6 +7,18 @@ class SolarSystemSeeder extends Seeder
 {
     public function run()
     {
-        factory(SolarSystem::class, 5)->create();
+        factory(SolarSystem::class)->create(
+            [
+                'driver_name' => 'eriadu',
+                'img' => 'https://res.cloudinary.com/drmyhljip/image/upload/v1577627240/nabu_communication_droid/solar_systems/eriadu_hbmovh.svg',
+            ]
+        );
+
+        factory(SolarSystem::class)->create(
+            [
+                'driver_name' => 'corellia',
+                'img' => 'https://res.cloudinary.com/drmyhljip/image/upload/v1577627240/nabu_communication_droid/solar_systems/corellia_maviol.svg',
+            ]
+        );
     }
 }
