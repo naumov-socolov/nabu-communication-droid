@@ -1,3 +1,4 @@
+require('./bootstrap.js');
 import Vue from 'vue';
 import SolarSystems from './components/SolarSystems.vue';
 

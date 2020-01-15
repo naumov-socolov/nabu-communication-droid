@@ -5,7 +5,9 @@
                 <div class="card">
                     <img :src=this.techDetails.img class="planet">
                     <a :href=this.sendMessageLink class="name">{{ this.techDetails.title }}</a> ::
-                    <Message></Message>
+                    <template v-for="response in this.solarSystemResponses">
+                        <Message :response="response"></Message>
+                    </template>
                 </div>
             </div>
         </div>
@@ -26,9 +28,29 @@
                     default: {},
                 },
             },
+        data() {
+            return {
+                solarSystemResponses: [],
+            };
+        },
+        mounted() {
+            this.listenToDistantSolarSystem();
+        },
         computed: {
             sendMessageLink() {
                 return '/api/inner/user/solar-system/' + this.techDetails.id + '/send-message?amount=50';
+            },
+        },
+        methods: {
+            listenToDistantSolarSystem() {
+                const SolarSystem = this;
+
+                var channel = window.Echo.channel('my-channel');
+                channel.listen('.my-event', function (data) {
+                    console.log(SolarSystem.solarSystemResponses);
+                    SolarSystem.solarSystemResponses.push(data);
+                    console.log(JSON.stringify(data));
+                });
             },
         },
     };

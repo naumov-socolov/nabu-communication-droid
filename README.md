@@ -1,4 +1,4 @@
-<p align="center"><img src="https://res.cloudinary.com/drmyhljip/image/upload/v1577281554/title_img_bhz07s.svg" width="768"></p>
+<p align="center"><img src="https://res.cloudinary.com/drmyhljip/image/upload/v1577281554/nabu_communication_droid/title_img_bhz07s.svg" width="768"></p>
 
 #
 #### About
@@ -13,5 +13,9 @@ To keep system maintainable and stable it is made highly SOLID, classes are loos
 
 As a result Driod will convert all response messages into unified structure no matter how response was received. All request are logged as well. 
 
-It is a demo project, some functionality has been simplified, excluding architecture, it is made to perform.  
+It is a demo project, some functionality has been simplified, excluding architecture, it is made to perform.
+
+
+<p align="center"><img src="https://res.cloudinary.com/drmyhljip/image/upload/v1579094469/nabu_communication_droid/Screen_Shot_2020-01-15_at_15.21.02_ts0b4z.png" width="768"></p>
+  
    
